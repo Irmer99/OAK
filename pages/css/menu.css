@@ -41,9 +41,7 @@ ul, li {
 
 
 body{
-  width: 100vw;
-  /* background-color: var(--primary-dark); */
-  
+  overflow-x: hidden;  
 }
 .menu-container{
   width: 100%;
@@ -79,8 +77,26 @@ body{
   align-items: center;
 }
 .custom-tab-style>div img{
- width: 98%;
+ width: 100%;
  height: auto;
  margin: 0;
  padding: 0;
+}
+
+/* overlay button */
+.menu-container .contact-us{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  
+}
+.menu-container .contact-us i{
+  color: var(--primary-light);
+  font-size: 60px;
+  mix-blend-mode: difference;
+}
+/* Scroll smooth */
+html {
+  scroll-behavior: smooth;
 }
