@@ -1,0 +1,306 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color Palette */
+  --primary-light: #fffae4;
+  --primary-dark:#422311;
+  --secondary-color: #55331a;
+  --accent-color: #10b981;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-light: #ffffff;
+  --background: #ffffff;
+  --background-alt: #f9fafb;
+  --border-color: #e5e7eb;
+
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+
+/* SCROLL BAR SETTINGS */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-dark);
+  border-radius: 10px;
+  border: 1px solid var(--background-alt);
+  
+}
+/* Base Typography */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-secondary);
+}
+
+/* main */
+
+.main-container{
+  position: relative;
+}
+/* NAVBAR */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  position: fixed; /* Sticky navigation bar changed to fixed*/
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+
+}
+
+.nav-bar a {
+  color: var(--primary-light);
+  text-decoration: none;
+  transition: text-decoration var(--transition-fast);
+  font-size: 1.2rem ;
+  font-weight: bold;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+.nav-bar .logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+}
+.nav-bar .logo-container img{
+  height: 100px;
+}
+
+
+/* Hero Section */
+.hero {
+  background-color: #000;
+  color: var(--text-light);
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+
+/* image sizing */
+.hero .carousel-inner {
+  height: 100%;
+}
+.hero .carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  object-position: center; /* Centers the image */
+  filter: brightness(70%); /* Darkens the image for better text visibility */
+  transform-origin: center;
+  scale: 1;
+  transition: transform 0.5s ease;
+}
+
+
+/* HERO BUTTON */
+.hero a.btn-one{
+  padding: var(--spacing-sm) var(--spacing-lg);
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 900;
+  position: absolute;
+  bottom: 40%;
+  left: 45%;
+  z-index: 10;
+  background-color: var(--primary-light);
+  border-radius: var(--radius-md);
+  font-size: 2rem;
+}
+
+
+/* HERO COLLAPSIBLE MENU LIST */
+.hero #collapsibleMenu{
+  position: absolute;
+  z-index: 10;
+  right: 10%;
+  top: 20%;
+  color: #000;
+  
+  & div a{
+    background-color: transparent;
+    color: #ffffff;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: 1px solid #ffffff;
+    font-size: 1.2rem;
+    font-weight: 200;
+    
+  }
+}
+
+
+
+/* FOOTER */
+footer{
+  background-color: var(--primary-dark);
+
+}
+footer .footer-container {
+  position: static;
+  min-height: 20rem;
+  width: 100%;
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: space-evenly;
+  padding: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.footer-container div{
+  margin-inline: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  width: 400px; /* Adjust width as needed */
+}
+.footer-container div a{
+  color: var(--primary-light);
+  text-decoration: none;
+  line-height: 2;
+}
+.footer-container div h1{
+  color: var(--primary-light);
+  font-weight: 800;
+}
+ .locations .location-container{
+  display: flex;
+  flex-direction: row;
+  /* gap: 15px; */
+  flex-wrap: wrap;
+  width: 400px; /* Adjust width as needed */
+
+}
+
+/* OUR BRANCHES*/
+.location-container div{
+  color: var(--primary-light);
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.location-container div p{
+  color: var(--primary-light);
+
+}
+.location-container div hr{
+  border: solid 1px var(--primary-light);
+  height: 70px;
+}
+
+
+/* SOCIALS */
+.footer-container .contact{
+  color: var(--primary-light);
+  text-align: center;
+  & i{
+    font-size: 2rem;
+  }
+}
+.contact div.social-links{
+  display: flex;
+  flex-direction: row;
+  gap: var(--radius-md);
+  justify-content: center;
+}
+
+/* DIRECT LINKS */
+.contact .direct-links{
+  margin-top: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h2{
+    font-weight: 800;
+  }
+  & p{
+    background-color: var(--primary-light);
+    padding: 8px 12px;
+    color: var(--primary-dark);
+    border-radius: var(--radius-sm);
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+}
+
+
+/* copyright */
+footer .copy-right p{
+  text-align: center;
+  color: var(--primary-light);
+}
+.copy-right hr{
+  margin-block: var(--spacing-xs);
+  border: dashed 1px var(--primary-light);
+}

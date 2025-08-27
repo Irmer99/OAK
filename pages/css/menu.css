@@ -1,0 +1,9 @@
+/* menu.css - Clean boilerplate for menu styling */
+
+/* Reset some default browser styles */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
