@@ -1,16 +1,8 @@
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   /* Color Palette */
   --primary-light: #fffae4;
   --primary-dark:#422311;
   --secondary-color: #55331a;
-  --accent-color: #10b981;
   --text-primary: #1f2937;
   --text-secondary: #6b7280;
   --text-light: #ffffff;
@@ -38,6 +30,13 @@
   --transition-normal: 0.3s ease-in-out;
   --transition-slow: 0.5s ease-in-out;
 }
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 
 
 /* SCROLL BAR SETTINGS */
