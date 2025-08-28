@@ -220,7 +220,7 @@ footer .footer-container {
   margin-inline: var(--spacing-sm);
   display: flex;
   flex-direction: column;
-  max-width: 400px; /* Adjust width as needed */
+  max-width: 500px; /* Adjust width as needed */
 }
 .footer-container div a{
   color: var(--primary-light);
@@ -230,34 +230,37 @@ footer .footer-container {
 .footer-container div h1{
   color: var(--primary-light);
   font-weight: 800;
+  text-align: center;
 }
  .locations .location-container{
   display: flex;
-  flex-direction: row;
-  /* gap: 15px; */
-  flex-wrap: wrap;
-  max-width: 400px; /* Adjust width as needed */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* Adjust width as needed */
 
 }
 
 /* OUR BRANCHES*/
 .location-container div{
   color: var(--primary-light);
-  /* max-width: 500px; */
+  max-width: 500px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.5rem;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .location-container div p{
   color: var(--primary-light);
+  min-width: 155px;
 
 }
 .location-container div hr{
   border: solid 1px var(--primary-light);
-  height: 70px;
+  height: 60px;
 }
 
 
@@ -307,3 +310,5 @@ footer .copy-right p{
 }
 
 /* MEDIA RESPONSIVENESS */
+
+@media (min-width: 576px) {  }
