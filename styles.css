@@ -231,24 +231,30 @@ footer .footer-container {
   color: var(--primary-light);
   font-weight: 800;
   text-align: center;
+  padding-bottom: var(--spacing-sm);
 }
- .locations .location-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%; /* Adjust width as needed */
 
+/* OUR MENU */
+.footer-container .menu a{
+  text-align: center;
 }
 
 /* OUR BRANCHES*/
+.locations .location-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ max-width: 100%; /* Adjust width as needed */
+
+}
 .location-container div{
   color: var(--primary-light);
   max-width: 500px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  row-gap: 0.5rem;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -309,6 +315,25 @@ footer .copy-right p{
   border: dashed 1px var(--primary-light);
 }
 
+
+
+
 /* MEDIA RESPONSIVENESS */
 
-@media (min-width: 576px) {  }
+@media only screen and (max-width: 576px) { 
+
+  .location-container div hr{
+   display: none;
+  }
+
+  .location-container div{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: var(--spacing-sm);
+    border-bottom: solid 1px var(--primary-light);
+}
+ }
