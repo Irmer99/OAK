@@ -321,10 +321,38 @@ footer .copy-right p{
 /* MEDIA RESPONSIVENESS */
 
 @media only screen and (max-width: 576px) { 
+  /* NAVBAR SETTINGS */
+  
+  
+  /* MENU LIST */
+  .hero #collapsibleMenu{
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    top: 15%;
+    
+    & div a{
+      padding: var(--spacing-sm);
+      font-size: 1rem;
+      
+    }
+  }
+
+  /* ORDER BUTTON */
+  .hero a.btn-one{
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-weight: 700;
+    position: absolute;
+    bottom: 35%;
+    left: 38%;
+    font-size: 1.5rem;
+  }
+
+  /* footer */
 
   .location-container div hr{
-   display: none;
-  }
+    display: none;
+    }
 
   .location-container div{
     max-width: 500px;
