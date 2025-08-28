@@ -220,7 +220,7 @@ footer .footer-container {
   margin-inline: var(--spacing-sm);
   display: flex;
   flex-direction: column;
-  width: 400px; /* Adjust width as needed */
+  max-width: 400px; /* Adjust width as needed */
 }
 .footer-container div a{
   color: var(--primary-light);
@@ -236,18 +236,20 @@ footer .footer-container {
   flex-direction: row;
   /* gap: 15px; */
   flex-wrap: wrap;
-  width: 400px; /* Adjust width as needed */
+  max-width: 400px; /* Adjust width as needed */
 
 }
 
 /* OUR BRANCHES*/
 .location-container div{
   color: var(--primary-light);
-  width: 500px;
+  /* max-width: 500px; */
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 .location-container div p{
   color: var(--primary-light);
@@ -303,3 +305,5 @@ footer .copy-right p{
   margin-block: var(--spacing-xs);
   border: dashed 1px var(--primary-light);
 }
+
+/* MEDIA RESPONSIVENESS */

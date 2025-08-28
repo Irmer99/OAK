@@ -39,9 +39,13 @@ ul, li {
 }
 
 
+*{
+  border: solid 1px #000;
+}
 
 body{
-  overflow-x: hidden;  
+  
+   position: relative;
 }
 .menu-container{
   width: 100%;
@@ -84,14 +88,14 @@ body{
 }
 
 /* overlay button */
-.menu-container .contact-us{
+.contact-us{
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
   
 }
-.menu-container .contact-us i{
+ .contact-us i{
   color: var(--primary-light);
   font-size: 60px;
   mix-blend-mode: difference;
