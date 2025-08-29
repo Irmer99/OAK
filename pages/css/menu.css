@@ -107,7 +107,7 @@ html {
 .menu-container .canvas-container{
   display: none;
 }
-/* CUSTOM CANVAS STYLING */
+CUSTOM CANVAS STYLING
 .custom-canvas-styling{
   background-color: var(--primary-dark);
   color: var(--primary-light);

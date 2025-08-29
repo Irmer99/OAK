@@ -19,7 +19,40 @@
 <body>
 
     <div class="main-container">
+        <!-- OFF CANVAS MENU FOR MOBILE -->
+         <div class="canvas-container">
+        <!-- CANVAS LINK -->
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" class="fixed-top">
+          <i class="bi bi-list"></i>
+        </a>
+        
+    <!-- CANVAS CONTENT -->
+        <div class="offcanvas offcanvas-start custom-canvas-styling" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header custom-canvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
+            <img src="../assets/Oaklight.png" alt="Oak Cafe logo" class="canvas-logo">
+            <a href="../index.html" class="list-group-item">
+              <i class="bi bi-house-fill"></i>
+            </a>
+          </div>
+
+          <div class="offcanvas-body">
+            
+            <!-- NAV TABS DUPLICATED ON TO OFF CANVAS -->
+              <div class="nav nav-tabs flex-column" id="nav-tab" role="tablist">
+                  <a class="nav-link active" id="nav-breakfast-tab" data-bs-toggle="tab" data-bs-target="#nav-breakfast" type="button" role="tab" aria-controls="nav-breakfast" aria-selected="true">BREAKFAST</a>
+                  <a class="nav-link" id="nav-mainMenu-tab" data-bs-toggle="tab" data-bs-target="#nav-mainMenu" type="button" role="tab" aria-controls="nav-mainMenu" aria-selected="false">MAIN MENU</a>
+                  <a class="nav-link" id="nav-halal-tab" data-bs-toggle="tab" data-bs-target="#nav-halal" type="button" role="tab" aria-controls="nav-halal" aria-selected="false">HALAL MENU</a>
+                  <a class="nav-link" id="nav-beverages-tab" data-bs-toggle="tab" data-bs-target="#nav-beverages" type="button" role="tab" aria-controls="nav-beverages" aria-selected="false">BEVERAGES</a>
+                  <a class="nav-link" id="nav-kidsMenu-tab" data-bs-toggle="tab" data-bs-target="#nav-kidsMenu" type="button" role="tab" aria-controls="nav-kidsMenu" aria-selected="false">KIDS' MENU</a>
+              </div>
+          </div>
+        </div>
+        <!-- END OF CANVAS CONTAINER -->
+      </div>
+
+<!-- NAVBAR FOR DESKTOP -->
         <div class="nav-bar">
             <div class="logo-container">
                 <img src="./assets/Oaklight.png" alt="Logo" class="logo-Dark"height="40px">
