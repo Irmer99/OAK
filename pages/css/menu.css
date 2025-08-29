@@ -124,11 +124,7 @@ html {
   text-align: center;
   margin-bottom: var(--spacing-sm);
 }
-/* CLOSE BUTTON */
-/* .custom-canvas-styling button{
-  color: var(--primary-light);
 
-} */
 
 .custom-canvas-styling a{
   color: var(--primary-light);
