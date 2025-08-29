@@ -135,7 +135,9 @@ img.canvas-container{
   flex-direction: column;
 }
 
-
+.custom-canvas-styling{
+  width: 50vw !important; /* changing the width of the off canvas*/
+}
 .custom-canvas-styling a{
   color: var(--primary-light);
   text-decoration: none;
