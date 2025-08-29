@@ -148,14 +148,8 @@ html {
   }
 
   .custom-nav-spacing{
-    flex-direction: column;
-    gap: var(--spacing-sm);
-    /* display: none; */
+    display: none;
   }
-  /* .custom-nav-spacing a{
-    font-size: 1rem;
-    font-weight: 400;
-    
-  } */
+  
   
 }
