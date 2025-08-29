@@ -124,6 +124,16 @@ html {
   text-align: center;
   margin-bottom: var(--spacing-sm);
 }
+/* LOGO STYLING */
+
+img.canvas-container{
+  height: 100px;
+}
+.custom-canvas-header{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
 
 .custom-canvas-styling a{

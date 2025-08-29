@@ -124,12 +124,8 @@ a:hover {
   text-decoration: underline;
 
 }
-.nav-bar .logo-container {
-  flex: 1;
-  display: flex;
-  justify-content: start;
-}
-.nav-bar .logo-container img{
+
+img.canvas-logo{
   height: 100px;
 }
 
