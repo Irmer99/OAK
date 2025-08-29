@@ -103,10 +103,25 @@ html {
   scroll-behavior: smooth;
 }
 
-
+/* REMOVING MOBILE CANVAS CONTAINER FOR DESKTOP */
+.menu-container .canvas-container{
+  display: none;
+}
 
 
 @media only screen and (max-width: 576px) {
+  .menu-container .canvas-container{
+    display: block;
+    position: absolute;
+  }
+  .menu-container .canvas-container i{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-light);
+    padding: 10px;
+    cursor: pointer;
+  }
+
   .custom-nav-spacing{
     flex-direction: column;
     gap: var(--spacing-sm);

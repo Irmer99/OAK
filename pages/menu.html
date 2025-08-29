@@ -25,116 +25,48 @@
 
 
      <!-- ADDING OFF CANVAS FOR MOBILE -->
+      <div class="canvas-container">
+        <!-- CANVAS LINK -->
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="bi bi-list"></i>
+        </a>
+        
+    <!-- CANVAS CONTENT -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
 
-      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-        Link with href
-      </a>
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        Button with data-bs-target
-      </button>
-
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">OUR MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+
+          <div class="offcanvas-body ">
+           <ul class="list-group list-group-flush">
+            <a href="../index.html" class="list-group-item">HOME</a>
+
+            <a href="" class="list-group-item">BREAKFAST</a>
+            <a href="" class="list-group-item">MAIN MENU</a>
+            <a href="" class="list-group-item">HALAL MEALS</a>
+            <a href="" class="list-group-item">BEVERAGES</a>
+            <a href="" class="list-group-item">KID'S MENU</a>
+          </ul>
           </div>
         </div>
+        <!-- END OF CANVAS CONTAINER -->
       </div>
       
+
 
     <!-- Tab Navigation -->
     <div class="menu-tabs">
      
-
-
-
-      <!-- HORIZONTAL PILLS CHANGED TO TABS-->
-       <div class="nav nav-tabs custom-nav-spacing" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link active" id="v-pills-breakfast-tab" data-toggle="pill" href="#v-pills-breakfast" role="tab" aria-controls="v-pills-breakfast" aria-selected="true">BREAKFAST</a>
-          <a class="nav-link" id="v-pills-mainMenu-tab" data-toggle="pill" href="#v-pills-mainMenu" role="tab" aria-controls="v-pills-mainMenu" aria-selected="false">MAIN MENU</a>
-          <a class="nav-link" id="v-pills-halal-tab" data-toggle="pill" href="#v-pills-halal" role="tab" aria-controls="v-pills-halal" aria-selected="false">HALAL MENU</a>
-          <a class="nav-link" id="v-pills-beverages-tab" data-toggle="pill" href="#v-pills-beverages" role="tab" aria-controls="v-pills-beverages" aria-selected="false">BEVERAGES</a>
-          <a class="nav-link" id="v-pills-kidsMenu-tab" data-toggle="pill" href="#v-pills-kidsMenu" role="tab" aria-controls="v-pills-kidsMenu" aria-selected="false">KID'S MENU</a>
-        </div>
-
-
-
-        <!-- THE CONTENT -->
-        <div class="tab-content custom-tab-style" id="v-pills-tabContent">
-          
-          <div class="tab-pane fade show active" id="v-pills-breakfast" role="tabpanel" aria-labelledby="v-pills-breakfast-tab">
-            <img src="../assets/menu Images/Final Breakfast Menu 2024 A4 extended_Optimized_1.png" alt="Breakfast menu photo">
-            <img src="../assets/menu Images/Final Breakfast Menu 2024 A4 extended_Optimized_2.png" alt="Breakfast menu photo">
-            <img src="../assets/menu Images/Final Breakfast Menu 2024 A4 extended_Optimized_3.png" alt="Breakfast menu photo">
-            <img src="../assets/menu Images/Final Breakfast Menu 2024 A4 extended_Optimized_4.png" alt="Breakfast menu photo">
-            <img src="../assets/menu Images/Final Breakfast Menu 2024 A4 extended_Optimized_5.png" alt="Breakfast menu photo">
-            <img src="../assets/menu Images/Final Breakfast Menu 2024 A4 extended_Optimized_6.png" alt="Breakfast menu photo">
-            
-          </div>
-
-          <div class="tab-pane fade" id="v-pills-mainMenu" role="tabpanel" aria-labelledby="v-pills-mainMenu-tab">
-            <img src="../assets/menu Images/Main Menu revised A4 ext template choosen_1.png" alt="Main course Menu">
-            <img src="../assets/menu Images/Main Menu revised A4 ext template choosen_2.png" alt="Main course Menu">
-            <img src="../assets/menu Images/Main Menu revised A4 ext template choosen_3.png" alt="Main course Menu">
-            <img src="../assets/menu Images/Main Menu revised A4 ext template choosen_4.png" alt="Main course Menu">
-            <img src="../assets/menu Images/Main Menu revised A4 ext template choosen_5.png" alt="Main course Menu">
-            <img src="../assets/menu Images/Main Menu revised A4 ext template choosen_6.png" alt="Main course Menu">
-            <img src="../assets/menu Images/Main Menu revised A4 ext template choosen_7.png" alt="Main course Menu">
-            <img src="../assets/menu Images/Main Menu revised A4 ext template choosen_8.png" alt="Main course Menu">
-          </div>
-          <div class="tab-pane fade" id="v-pills-halal" role="tabpanel" aria-labelledby="v-pills-halal-tab">
-            <img src="../assets/menu Images/Halala Menu revised A3 Optimized_1.png" alt="Halal Meal">
-            <img src="../assets/menu Images/Halala Menu revised A3 Optimized_2.png" alt="Halal Meal">
-            <img src="../assets/menu Images/Halala Menu revised A3 Optimized_3.png" alt="Halal Meal">
-            <img src="../assets/menu Images/Halala Menu revised A3 Optimized_4.png" alt="Halal Meal">
-            <img src="../assets/menu Images/Halala Menu revised A3 Optimized_5.png" alt="Halal Meal">
-            <img src="../assets/menu Images/Halala Menu revised A3 Optimized_6.png" alt="Halal Meal">
-            <img src="../assets/menu Images/Halala Menu revised A3 Optimized_7.png" alt="Halal Meal">
-            <img src="../assets/menu Images/Halala Menu revised A3 Optimized_8.png" alt="Halal Meal">
-          </div>
-          <div class="tab-pane fade" id="v-pills-beverages" role="tabpanel" aria-labelledby="v-pills-beverages-tab">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_01.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_02.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_03.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_04.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_05.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_06.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_07.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_08.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_09.png" alt="Beverage Selection">
-            <img src="../assets/menu Images/Beverages New Menu OPTION 2 A3 potrait_10.png" alt="Beverage Selection">
-          </div>
-          <div class="tab-pane fade" id="v-pills-kidsMenu" role="tabpanel" aria-labelledby="v-pills-kidsMenu-tab">
-            <img src="../assets/menu Images/Kids Menu New_1.png" alt="Kids' Meal">
-            <img src="../assets/menu Images/Kids Menu New_2.png" alt="Kids' Meal">
-            <img src="../assets/menu Images/Kids Menu New_3.png" alt="Kids' Meal">
-            <img src="../assets/menu Images/Kids Menu New_4.png" alt="Kids' Meal">
-            <img src="../assets/menu Images/Kids Menu New_5.png" alt="Kids' Meal">
-          </div>
-        </div>
+     
       
     </div>
   </div>
-
   <!-- END OF MAIN -->
 
   <!-- overlay up link button -->
     <div class="contact-us">
-
       <a href="#v-pills-tab">
         <i class="bi bi-arrow-up-circle-fill"></i>
       </a>
