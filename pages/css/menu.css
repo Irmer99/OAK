@@ -152,10 +152,9 @@ img.canvas-container{
     position: absolute;
   }
   .menu-container .canvas-container i{
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 800;
     color: var(--primary-light);
-    background: var(--primary-dark);
     border-radius: 5px;
     padding: 0 5px;
     cursor: pointer;
