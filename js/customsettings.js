@@ -9,19 +9,8 @@
         });
       });
 
-
-
-// Scroll to top when a tab is shown
-      // let triggerTabList = [].slice.call(document.querySelectorAll('#nav-tab a'))
-      // triggerTabList.forEach(function (triggerEl) {
-      //   let tabTrigger = new bootstrap.Tab(triggerEl)
-
-      //   triggerEl.addEventListener('shown.bs.tab', function (event) {
-      //     // Scroll to top of the tab content
-      //     document.getElementById('nav-tabContent').scrollIntoView();
-      //   })
-      // })
-
+      
+      // Scroll to top when a tab is shown
       let triggerTabList = [].slice.call(document.querySelectorAll('#nav-tab a'))
       triggerTabList.forEach(function (triggerEl) {
         triggerEl.addEventListener('shown.bs.tab', function (event) {
@@ -29,8 +18,20 @@
           document.getElementById('nav-tabContent').scrollIntoView({behavior: 'smooth'});
         })
       })
-      
 
+      
+      
+      
+      
+            // let triggerTabList = [].slice.call(document.querySelectorAll('#nav-tab a'))
+            // triggerTabList.forEach(function (triggerEl) {
+            //   let tabTrigger = new bootstrap.Tab(triggerEl)
+      
+            //   triggerEl.addEventListener('shown.bs.tab', function (event) {
+            //     // Scroll to top of the tab content
+            //     document.getElementById('nav-tabContent').scrollIntoView();
+            //   })
+            // })
       
        
 
